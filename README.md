@@ -14,3 +14,6 @@ git branch -m main2
 git log
 
 docker file 및 yml 파일 추가
+
+# dockerfile and docker-compose file 
+test 

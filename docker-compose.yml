@@ -3,18 +3,6 @@ services:
   web:
     build: .
     ports:
-      - "5001:5001"
-    networks:
-      - compose-networks
-
-  mongodb:
-    image: "mongo"
-    ports:
-      - "27017:27017"
-    volumes:
-      - .:/data/db
-    networks:
-      - compose-networks
-
-networks:
-  compose-networks:
+      - "8080:80"
+  
+  
