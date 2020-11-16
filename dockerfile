@@ -8,8 +8,10 @@ RUN echo start
 
 WORKDIR /usr/share/nginx/html
 
+COPY . /usr/share/nginx/html
+
 # Copy the file from your host to your current location.
-VOLUME ["/var/www:/usr/share/nginx/html:rw" ]
+VOLUME ["/APP" ]
 
 # Run the specified command within the container.
 CMD [ "nginx", "-g", "daemon off;" ]
